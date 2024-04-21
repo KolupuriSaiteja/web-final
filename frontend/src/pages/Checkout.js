@@ -70,7 +70,7 @@ export default function Checkout() {
         <Breadcrumb.Item active>Checkout</Breadcrumb.Item>
       </BreadcrumbComponent>
       <Form onSubmit={handleSubmit}>
-        <h6>Order Total: ${total}</h6>
+        <h6>Order Total: ${total.toFixed(2)}</h6>
         <h6>Address Details</h6>
         <Form.Group className="mt-2" controlId="addressAddressLine">
           <Form.Label>Address Line</Form.Label>
